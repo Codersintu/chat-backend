@@ -10,6 +10,10 @@ const io = new Server(httpServer, {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Blog API is running");
+});
+
 const CHAT_ROOMS =new Set(["GENERAL","TECH_SUPPORT"]);
 
 
